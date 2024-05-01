@@ -29,7 +29,7 @@ def load_docs_from_jsonl(file_path)->Iterable[Document]:
     return array
 if "vector" not in st.session_state:
     st.session_state.embeddings=OpenAIEmbeddings(openai_api_key='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')
-    st.session_state.final_documents=load_docs_from_jsonl("fresh_chunk.jsonl")
+    st.session_state.final_documents=load_docs_from_jsonl("groq/fresh_chunk.jsonl")
     st.session_state.vectors=FAISS.from_documents(st.session_state.final_documents,st.session_state.embeddings)
 
 
