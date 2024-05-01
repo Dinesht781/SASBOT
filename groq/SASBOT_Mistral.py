@@ -17,7 +17,7 @@ load_dotenv()
 
 
 ## load the Groq API key
-groq_api_key=os.environ['GROQ_API_KEY']
+groq_api_key="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"
 
 def load_docs_from_jsonl(file_path)->Iterable[Document]:
     array = []
